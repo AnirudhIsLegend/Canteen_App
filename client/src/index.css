@@ -1,0 +1,77 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #111827; /* text primary */
+  background-color: #F9FAFB; /* app background */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Status Colors */
+  --color-status-ready: #16A34A;
+  --color-status-ready-bg: #DCFCE7;
+  --color-status-preparing: #F59E0B;
+  --color-status-preparing-bg: #FEF3C7;
+  --color-status-pending: #DC2626;
+  --color-status-pending-bg: #FEE2E2;
+
+  /* Student Theme */
+  --color-student-primary: #0F766E;
+  --color-student-primary-light: #14B8A6;
+  --color-student-accent: #06B6D4;
+
+  /* Admin Theme */
+  --color-admin-primary: #1F2937;
+  --color-admin-accent: #F97316;
+  --color-admin-secondary: #6B7280;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #F9FAFB;
+  color: #111827;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.1em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.15s ease,
+    transform 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(15, 118, 110, 0.18);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+input {
+  font-family: inherit;
+}
